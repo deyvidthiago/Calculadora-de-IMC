@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+*{padding: 0; margin:0; border:none; box-sizing: border-box; font-family: 'Kalam', sans-serif;}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.container .box{
+    display: flex;
+    height: 90vh;
+    width: 50%;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #0000000c;
+    box-shadow: 8px 5px 5px #0000002c;
+}
+.box-left{
+   padding: 10px;
+   height: 100%;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+}
+.box-left h1{
+    font-size: 35px;
+    margin-bottom:0px;
+}
+.box-left input{
+   height: 50px;
+   width: 220px;
+   margin-top: 8px;
+   padding-left: 10px;
+    border-radius: 12px;
+    outline: none;
+}
+.box-left button{
+ height: 45px;
+ width: 85px;
+ border-radius: 12px;
+ margin-top: 10px;
+ transition: 0.5s;
+ background-color: #00000015;
+}
+.box-left button:hover{
+    opacity: 0.6;
+}
+#resultado {
+    font-size: 20px;
+    margin-top: 18px
+}
+.box-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+.box-right p{
+    margin-right: 10px;
+}
+.box-right img{
+    width: 250px;
+}
+@media (max-width:965px){
+.container{
+    height: 100%;
+}
+.container .box{
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}
+.box-left {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+  width: 100%;
+    gap:0;
+}
+.box-right{
+    height: 50%;
+    width: 100%;
+    padding: 10px;
+}
+.box-right img{
+    width: 150px;
+}
+}
+@media (max-width: 645px){
+    .container .box{
+        display: flex;
+        min-height: 80vh;
+        width: 80vw;
+    }
+    .box-right img{
+display: none;
+    }   
+}
+@media (max-width: 400px){
+    .container{
+        padding: 0;
+    }
+    .container .box{
+        height: 100vh;
+        width: 100vw;
+    }
+    .box-left h1{
+        margin-top: 80px;
+    }
+    #resultado{
+        margin-bottom: 50px;
+    }
+}

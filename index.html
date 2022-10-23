@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Css-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Script -->
+    <script src="js/script.js" defer></script>
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <!--Container principal-->
+    <div class="container">
+      <!-- Container secundário-->
+      <div class="box">
+        <!-- Esquerda do container-->
+        <div class="box-left">
+          <h1>Calculadora de IMC</h1>
+          <input type="number"  placeholder="Digite sua altura" id="altura"/>
+          <input type="number" placeholder="Digite seu peso" id="peso" />
+          <div class="buttons">
+            <button id="calcular">Calcular</button>
+            <button id="limpar">Limpar</button>
+          </div>
+          
+          <div id="resultado"></div>
+        </div>
+        <!--Direita do container-->
+        <div class="box-right">
+          <p>
+            O IMC, Índice de Massa Corporal, é utilizado para avaliar se o peso
+            do indivíduo está adequado à sua altura. É um indicador importante
+            que fornece dados para se avaliar o estado de saúde de uma pessoa,
+            podendo indicar questões como obesidade, desnutrição e outras
+            condições prejudiciais
+          </p>
+        <img src="img/img.png" alt="">
+      </div>
+    </div>
+  </body>
+</html>
